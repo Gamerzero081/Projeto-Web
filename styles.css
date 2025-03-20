@@ -1,6 +1,13 @@
 /* Importando fontes do Google Fonts */
+*{
+    padding: 0;
+    line-height: normal;
+    box-sizing: border-box;
+    outline: none;
+}
+
 a {
-    font-family: "Instrumental Sans";
+    font-family: "Instrument Sans";
     text-decoration: none;
 }
 
@@ -28,18 +35,29 @@ header > div{
     gap: 12px;
     margin-top: -5px;
 }
+
 h1{
     margin-top: 17px;
 } 
 
-p{
-    font-size: 18px;
+.title1{
+    font-size: 32px;
 }
 
+.title2{
+    font-size: 12px;
+}
+
+.destinos{
+    font-size: 32px;
+    font-family: Instrument Sans;
+
+    
+}
 .text1{
-    font-family: var(--font-instrument-sans);
+    font-family: "Instrument Sans";
     line-height: 30%;
-    font-size: 42px;
+    font-size: 32px;
     left: 20%;
     text-align: left;
     position: absolute;
@@ -50,7 +68,7 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     color: black;
-    font-family: 'Kanit';
+    font-family: 'Instrument Sans';
     font-weight: 600;
 }
 
@@ -72,7 +90,7 @@ main {
 }
 
 form {
-    font-family: 'Instrumental Sans';
+    font-family: 'Instrument Sans';
     width: 100%;
     left: 20%;
     bottom: 28%;
@@ -95,7 +113,7 @@ label {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: 'Instrument Sans'serif;
+    font-family: 'Instrument Sans';
     font-weight: 600;
     color: black;
 
@@ -166,6 +184,10 @@ footer {
     padding: 5px;
 }
 
+.quadrado > p{
+    font-family: Inter;
+}
+
 .grid-container {
     margin: 0 auto;
     max-width: 1240px;
@@ -203,6 +225,7 @@ footer {
 }
 
 .fundo{
+    background-color: rgba(0, 0, 0, 0.5);
     position: relative;
     width: 100%;
     background-image: url(fundo.png);
@@ -239,7 +262,9 @@ footer {
 }
 
 .carousel {
-    width: 80%;
+    margin: 40px auto;
+    font-family: Inria sans;
+    width: 50%;
     max-width: 900px;
     overflow: hidden;
     position: relative;
@@ -250,7 +275,9 @@ footer {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-.carousel-item {
+.carousel-item { 
+    position: relative;
+    align-self: center;
     min-width: 100%;
     box-sizing: border-box;
     text-align: center;
@@ -258,7 +285,8 @@ footer {
     padding: 20px;
 }
 .carousel-item img {
-    width: 400px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
 }
 .carousel-controls {
