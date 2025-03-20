@@ -1,0 +1,307 @@
+/* Importando fontes do Google Fonts */
+*{
+    padding: 0;
+    line-height: normal;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    font-family: "Instrument Sans";
+    text-decoration: none;
+}
+
+a:hover{
+    color: #c5b34f;
+    opacity: 0.7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+header > div{
+    display: flex;
+    gap: 12px;
+    margin-top: -5px;
+}
+
+h1{
+    margin-top: 17px;
+} 
+
+.title1{
+    font-size: 32px;
+}
+
+.title2{
+    font-size: 12px;
+}
+
+.destinos{
+    font-size: 32px;
+    font-family: Instrument Sans;
+
+    
+}
+.text1{
+    font-family: "Instrument Sans";
+    line-height: 30%;
+    font-size: 32px;
+    left: 20%;
+    text-align: left;
+    position: absolute;
+    bottom: 45%;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Instrument Sans';
+    font-weight: 600;
+}
+
+button {
+    background-color: #c1a71d;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    font-family: 'Kanit';
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    background: url('background.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+}
+
+form {
+    font-family: 'Instrument Sans';
+    width: 100%;
+    left: 20%;
+    bottom: 28%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 950px;
+    margin: auto;
+}
+
+form [type="submit"]{
+    font-size: larger;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Instrument Sans';
+    font-weight: 600;
+    color: black;
+
+}
+
+input {
+    padding: 8px 2px;
+    border: 3px 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[placeholder]{
+    font-size: medium;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Kanit';
+    font-weight: 600;
+    background-color: #c1a71d;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.icones {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    position: absolute;
+    bottom: 9%;
+    left: 36%;
+    transform: translateX(-50%);
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.quadrado {
+    text-align: center;
+    font-size: 20px;
+}
+
+.quadrado > img {
+    cursor: pointer;
+    background-color: #c5b34f;
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.quadrado > p{
+    font-family: Inter;
+}
+
+.grid-container {
+    margin: 0 auto;
+    max-width: 1240px;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+}
+
+.grid-item {
+    left: 5%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.grid-item img {
+    border-radius: 10px;
+    height: 393px;
+    width: 556px;
+    display: block;
+    object-fit: cover;
+    background-color:rgba(0, 0, 0, 0.3)
+}
+
+
+.grid-item span {
+    font-style: normal;
+    font-size: 26px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-family: Kanit;
+    text-shadow: 3px 2px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.fundo{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 100%;
+    background-image: url(fundo.png);
+    background-size: cover;
+}
+
+.grid{
+    display:flex;
+    flex-direction: row;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: none;
+    padding: 100px;
+    position: absolute;
+    
+}
+
+.cropped-hoteis{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.hoteis {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+}
+
+.carousel {
+    margin: 40px auto;
+    font-family: Inria sans;
+    width: 50%;
+    max-width: 900px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item { 
+    position: relative;
+    align-self: center;
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: white;
+    padding: 20px;
+}
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.control {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
