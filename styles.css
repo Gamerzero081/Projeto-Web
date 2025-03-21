@@ -96,7 +96,7 @@ button:hover{
 }
 
 main {
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url(imagens/fundo.png) no-repeat center center/cover;
     text-align: center;
     color: white;
 }
